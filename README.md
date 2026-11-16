@@ -6,11 +6,17 @@
 
 **Seu repertório na sua mão.**
 
+## Acesse o Forte Piano
+
+### [Abrir o site](https://fortepiano.duckdns.org/) · [Baixar o aplicativo Android](https://fortepiano.duckdns.org/downloads/fortepiano.apk)
+
+O site e o aplicativo usam o mesmo acervo e a mesma API. A consulta de materiais exige uma conta autorizada pelo Maestro. O aplicativo é distribuído como APK Android ARM64, com instalação direta; não é necessário manter um computador ou servidor de desenvolvimento ligado.
+
 Aplicação Web e Android para organizar o repertório de uma orquestra e distribuir partituras e áudios conforme o perfil e os naipes de cada pessoa.
 
-Desenvolvido como Trabalho de Conclusão de Curso, o Forte Piano conecta a manutenção do acervo à experiência de quem precisa encontrar e consultar seu material durante estudos e ensaios.
+Criado para o uso real por uma orquestra de igreja, o Forte Piano conecta a manutenção do acervo à experiência de quem precisa encontrar e consultar seu material durante estudos e ensaios. O desenvolvimento também integra um Trabalho de Conclusão de Curso.
 
-> **Estado do projeto · novembro de 2026:** primeira versão implementada. Publicação em produção e testes em cenários reais são as próximas etapas.
+> **Primeira publicação · 16/11/2026:** site e API hospedados na Oracle Cloud com HTTPS, aplicativo Android assinado disponível para download e verificações iniciais realizadas pelo responsável pelo projeto. A preparação de operação e o piloto com a orquestra continuam em andamento.
 
 Este repositório apresenta o produto, suas funcionalidades e decisões técnicas. O código-fonte é mantido em repositório privado.
 
@@ -86,6 +92,7 @@ O cadastro de pessoas é conduzido pelo Maestro. No primeiro acesso, a pessoa va
 | Web | React 19, Vite, React Router, TanStack Query e React PDF |
 | Android | React Native, Expo, React Navigation, SecureStore, react-native-pdf e expo-audio |
 | Lógica compartilhada | JavaScript, cliente HTTP, operações de API, consultas e fluxo de senha |
+| Publicação | Oracle Cloud, Docker Compose, Caddy/HTTPS e distribuição direta do APK |
 | Verificação técnica | Node Test Runner, ESLint, build Web e exportação do bundle Android |
 
 ## Decisões técnicas
@@ -110,13 +117,16 @@ A [visão de arquitetura](docs/arquitetura.md) detalha essas escolhas e as integ
 | Interface Web | Implementada para os fluxos centrais |
 | Aplicativo Android | Implementado para os fluxos centrais |
 | Testes automatizados de partes do frontend | Presentes no projeto de implementação |
-| Publicação em produção | Pendente |
+| Web e API publicadas com HTTPS | Disponíveis desde 16/11/2026 |
+| APK Android release | Download disponível; instalação e atualização confirmadas pelo responsável |
+| Verificações iniciais da Web | Login, acesso ao banco e partitura do Drive confirmados; Web aprovada provisoriamente pelo responsável |
+| Preparação de operação | Backup, monitoramento e validações adicionais pendentes |
 | Piloto de ensaio e homologação com usuários | Pendente |
-| Demonstração pública e capturas finais | A acrescentar após preparação e validação |
+| Endereços públicos e capturas finais | Site e APK disponíveis; capturas finais a acrescentar |
 
 As funcionalidades descritas refletem a implementação. Builds e testes isolados não substituem o uso em aparelho, a validação das integrações ou a homologação de produção.
 
-O foco atual é publicar e testar a primeira versão. Agenda, comunicados, modo offline completo, reprodução mobile de links externos/YouTube e suporte iOS homologado não fazem parte da entrega funcional apresentada.
+O foco atual é concluir a preparação para operação e realizar um piloto com usuários da orquestra. Há uma ocorrência de recarregamento da partitura e do áudio na Web, relatada após o início da reprodução, a investigar em correções futuras. Agenda, comunicados, modo offline completo, reprodução mobile de links externos/YouTube e suporte iOS homologado não fazem parte da entrega funcional apresentada.
 
 ## Contexto acadêmico
 

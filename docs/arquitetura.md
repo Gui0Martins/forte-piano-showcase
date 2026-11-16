@@ -99,4 +99,12 @@ Essa divisão reaproveita a lógica comum sem obrigar a interface nativa a repro
 
 O projeto de implementação contém testes isolados para partes do frontend, autenticação, cliente HTTP, consultas, navegação e tratamento de materiais, além de lint e builds. Esses recursos verificam comportamentos delimitados; não equivalem à homologação completa das integrações ou do ambiente final.
 
-A próxima etapa técnica é publicar a API/Web, preparar uma distribuição Android independente do computador de desenvolvimento e validar os fluxos com pessoas e materiais autorizados em cenários reais.
+## Ambiente publicado
+
+Desde 16/11/2026, a Web e a API estão publicadas na Oracle Cloud com Docker Compose e Caddy/HTTPS. O domínio público encaminha `/api/...` à API e os demais caminhos à Web; o APK Android assinado é distribuído por download HTTPS. O app instalado consulta a mesma API sem depender do computador de desenvolvimento.
+
+**[Abrir o site](https://fortepiano.duckdns.org/) · [Baixar o Android](https://fortepiano.duckdns.org/downloads/fortepiano.apk)**
+
+PostgreSQL, autenticação e arquivos permanecem no Supabase. A credencial de leitura do Drive é disponibilizada somente ao backend, fora da imagem e do código público. Os arquivos e o acesso ao repertório continuam sujeitos às permissões da conta.
+
+A próxima etapa é completar a preparação operacional: backup/recuperação, monitoramento, redução do risco de pausa por inatividade do Supabase gratuito e validação dos perfis antes de ampliar o uso. Verificações iniciais do responsável não equivalem a homologação com toda a orquestra.

@@ -2,7 +2,7 @@
 
 [Voltar à apresentação](../README.md) · [Arquitetura](arquitetura.md)
 
-O Forte Piano atende dois momentos complementares: preparar e organizar o acervo, e consultar o material para estudar ou ensaiar. Os fluxos centrais estão implementados; a publicação e a validação em uso real ainda estão pendentes.
+O Forte Piano atende dois momentos complementares: preparar e organizar o acervo, e consultar o material para estudar ou ensaiar. Os fluxos centrais estão implementados e a primeira publicação foi realizada em 16/11/2026. A preparação operacional e o piloto com a orquestra ainda estão pendentes.
 
 ## Entrar e recuperar acesso
 
@@ -70,4 +70,6 @@ Maestro e Arquivista consultam todos os materiais da música para manter o acerv
 
 O foco é repertório, materiais, estudo e administração básica da orquestra. A versão apresentada não inclui agenda integrada, comunicados integrados, edição de anotações sobre a partitura, modo offline completo ou homologação iOS.
 
-A próxima etapa é publicar o ambiente, validar a distribuição Android e realizar testes de acesso, leitura, áudio, permissões e uso em ensaio. Resultados de uso real serão apresentados somente depois dessa avaliação.
+O ambiente foi publicado em 16/11/2026: **[site Web](https://fortepiano.duckdns.org/) e [APK Android ARM64](https://fortepiano.duckdns.org/downloads/fortepiano.apk)**. O responsável confirmou verificações iniciais da Web e a instalação/atualização do aplicativo assinado. O repertório exige uma conta autorizada; não há uma conta pública de demonstração disponibilizada neste repositório.
+
+Ainda faltam a preparação operacional e a matriz completa de testes de acesso, leitura, áudio, permissões e uso em ensaio. Uma ocorrência de recarregamento da partitura/áudio na Web permanece aberta para investigação. Resultados do piloto serão apresentados somente depois dessa avaliação.
